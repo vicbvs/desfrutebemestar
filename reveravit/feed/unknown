@@ -9,7 +9,7 @@
 
 <channel>
 	<title>reveravit.com</title>
-	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<atom:link href="/reveravit/feed/" rel="self" type="application/rss+xml" />
 	<link>https://reveravit.com</link>
 	<description></description>
 	<lastBuildDate>Fri, 30 Dec 2022 02:37:41 +0000</lastBuildDate>

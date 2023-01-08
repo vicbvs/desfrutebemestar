@@ -8,7 +8,7 @@
 <channel>
 	<title>
 	Comentários sobre reveravit.com	</title>
-	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
+	<atom:link href="/reveravit/comments/feed/" rel="self" type="application/rss+xml" />
 	<link>https://reveravit.com</link>
 	<description></description>
 	<lastBuildDate>Fri, 30 Dec 2022 02:37:41 +0000</lastBuildDate>
