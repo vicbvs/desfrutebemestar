@@ -2258,7 +2258,7 @@
                   <h2 class="elementor-heading-title elementor-size-default">
                     <span style="font-size: 20px; font-weight: 600">
                       Essa oferta irá acabar em: <br />
-                      <span id="timer"></span>
+                      <span class="timer1"></span>
                     </span>
                   </h2>
                 </div>
@@ -2508,7 +2508,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/plal9mqo/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/camg84ovk?split=12"
                               class="elementor-button-link elementor-button elementor-size-lg"
                               role="button"
                             >
@@ -2694,7 +2694,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/plaxp9dv/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/cam85pn6z?split=12"
                               class="elementor-button-link elementor-button elementor-size-lg"
                               role="button"
                             >
@@ -2880,7 +2880,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/pla2gpen/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/cam7pdevp?split=12"
                               class="elementor-button-link elementor-button elementor-size-lg"
                               role="button"
                             >
@@ -3012,7 +3012,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/plal9mqo/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/camg84ovk?split=12"
                               class="elementor-button-link elementor-button elementor-size-sm"
                               role="button"
                             >
@@ -3080,7 +3080,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/plaxp9dv/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/cam85pn6z?split=12"
                               class="elementor-button-link elementor-button elementor-size-sm"
                               role="button"
                             >
@@ -3159,7 +3159,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/pla4gz4v/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/cam7pdevp?split=12"
                               class="elementor-button-link elementor-button elementor-size-sm"
                               role="button"
                             >
@@ -3478,7 +3478,7 @@
               >
                 <div class="elementor-widget-container">
                   <script>
-                    function startTimer(duration, display) {
+                    function startTimer(duration, display1, display2) {
                       var timer = duration,
                         minutes,
                         seconds;
@@ -3487,24 +3487,28 @@
                         seconds = parseInt(timer % 60, 10);
                         minutes = minutes < 10 ? '0' + minutes : minutes;
                         seconds = seconds < 10 ? '0' + seconds : seconds;
-                        display.textContent = minutes + ':' + seconds;
+                        display1.textContent = minutes + ':' + seconds;
+                        display2.textContent = minutes + ':' + seconds;
                         if (--timer < 0) {
                           timer = duration;
-                          display.textContent = 'Oferta perdida!';
+                          display1.textContent = 'Oferta perdida!';
+                          display2.textContent = 'Oferta perdida!';
                         }
                       }, 1000);
                     }
                     window.onload = function () {
                       var duration = 60 * 5;
                       // Converter para segundos
-                      display = document.querySelector('#timer');
+                      display1 = document.querySelector('.timer1');
+                      display2 = document.querySelector('.timer2');
                       // selecionando o timer
-                      startTimer(duration, display);
+                      startTimer(duration, display1, display2);
                       // iniciando o timer
                     };
                   </script>
                   <style>
-                    #timer {
+                    .timer1,
+                    .timer2 {
                       color: #f39a12;
                       font-size: 50px;
                       background-color: #fff;
@@ -4374,6 +4378,7 @@
         class="elementor-section elementor-top-section elementor-element elementor-element-3a8394d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
         data-id="3a8394d"
         data-element_type="section"
+        id="preco"
         data-settings='{"background_background":"gradient"}'
       >
         <div class="elementor-background-overlay"></div>
@@ -4406,7 +4411,7 @@
                   <h2 class="elementor-heading-title elementor-size-default">
                     <span style="font-size: 20px; font-weight: 600">
                       Essa oferta irá acabar em: <br />
-                      <span id="timer"></span>
+                      <span class="timer2"></span>
                     </span>
                   </h2>
                 </div>
@@ -4633,7 +4638,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/plal9mqo/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/camg84ovk?split=12"
                               class="elementor-button-link elementor-button elementor-size-lg"
                               role="button"
                             >
@@ -4819,7 +4824,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/plaxp9dv/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/cam85pn6z?split=12"
                               class="elementor-button-link elementor-button elementor-size-lg"
                               role="button"
                             >
@@ -5005,7 +5010,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/pla2gpen/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/cam7pdevp?split=12"
                               class="elementor-button-link elementor-button elementor-size-lg"
                               role="button"
                             >
@@ -5137,7 +5142,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/plal9mqo/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/camg84ovk?split=12"
                               class="elementor-button-link elementor-button elementor-size-sm"
                               role="button"
                             >
@@ -5205,7 +5210,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/plaxp9dv/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/cam85pn6z?split=12"
                               class="elementor-button-link elementor-button elementor-size-sm"
                               role="button"
                             >
@@ -5284,7 +5289,7 @@
                         <div class="elementor-widget-container">
                           <div class="elementor-button-wrapper">
                             <a
-                              href="https://ev.braip.com/checkout/pla4gz4v/chednwnv"
+                              href="https://ev.braip.com/campanhas/cpa/cam7pdevp?split=12"
                               class="elementor-button-link elementor-button elementor-size-sm"
                               role="button"
                             >
@@ -5591,50 +5596,6 @@
                   </div>
                 </div>
               </section>
-              <div
-                class="elementor-element elementor-element-1d8d0e3 elementor-widget elementor-widget-html"
-                data-id="1d8d0e3"
-                data-element_type="widget"
-                data-widget_type="html.default"
-              >
-                <div class="elementor-widget-container">
-                  <script>
-                    function startTimer(duration, display) {
-                      var timer = duration,
-                        minutes,
-                        seconds;
-                      setInterval(function () {
-                        minutes = parseInt(timer / 60, 10);
-                        seconds = parseInt(timer % 60, 10);
-                        minutes = minutes < 10 ? '0' + minutes : minutes;
-                        seconds = seconds < 10 ? '0' + seconds : seconds;
-                        display.textContent = minutes + ':' + seconds;
-                        if (--timer < 0) {
-                          timer = duration;
-                          display.textContent = 'Oferta perdida!';
-                        }
-                      }, 1000);
-                    }
-                    window.onload = function () {
-                      var duration = 60 * 5;
-                      // Converter para segundos
-                      display = document.querySelector('#timer');
-                      // selecionando o timer
-                      startTimer(duration, display);
-                      // iniciando o timer
-                    };
-                  </script>
-                  <style>
-                    #timer {
-                      color: #f39a12;
-                      font-size: 50px;
-                      background-color: #fff;
-                      padding: 5px;
-                      border-radius: 5px;
-                    }
-                  </style>
-                </div>
-              </div>
               <div
                 class="elementor-element elementor-element-7694854 elementor-widget elementor-widget-spacer"
                 data-id="7694854"
@@ -6065,7 +6026,7 @@
               >
                 <div class="elementor-widget-container">
                   <h2 class="elementor-heading-title elementor-size-default">
-                    © Copyright 2022
+                    © Copyright 2023
                     <span style="color: #f4bc79">
                       <em>Curcumy</em>
                     </span>
