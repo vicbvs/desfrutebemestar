@@ -43,6 +43,24 @@
   src="https://www.facebook.com/tr?id=233495099089537&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+<script>
+(function() {
+  const utmParamQueryString = new URLSearchParams(window.location.search);
+  if (utmParamQueryString.toString()) {
+    var navLinks = document.querySelectorAll('a');
+    navLinks.forEach(function(item) {
+      if (item.href.indexOf('ev.braip.com') !== -1) {
+        if (item.href.indexOf('?') === -1) {
+              item.href += '?' + utmParamQueryString.toString();
+        } else {
+              item.href += '&' + utmParamQueryString.toString();
+        }
+      }
+    });
+  }
+})();
+</script>
 	
 <!-- track -->
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"> </script>

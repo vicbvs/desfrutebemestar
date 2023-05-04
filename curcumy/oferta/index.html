@@ -8,6 +8,25 @@
     <script type="application/javascript">
       console.log('PixelYourSite Free version 9.3.5');
     </script>
+
+    <script>
+      (function () {
+        const utmParamQueryString = new URLSearchParams(window.location.search);
+        if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function (item) {
+            if (item.href.indexOf('ev.braip.com') !== -1) {
+              if (item.href.indexOf('?') === -1) {
+                item.href += '?' + utmParamQueryString.toString();
+              } else {
+                item.href += '&' + utmParamQueryString.toString();
+              }
+            }
+          });
+        }
+      })();
+    </script>
+
     <title>1 &#8211; POTE EXTRA &#8211; Curcumy</title>
     <link
       rel="alternate"

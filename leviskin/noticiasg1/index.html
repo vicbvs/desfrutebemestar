@@ -691,6 +691,25 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- /end HFCM by 99 Robots -->
+
+    <script>
+      (function () {
+        const utmParamQueryString = new URLSearchParams(window.location.search);
+        if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function (item) {
+            if (item.href.indexOf('ev.braip.com') !== -1) {
+              if (item.href.indexOf('?') === -1) {
+                item.href += '?' + utmParamQueryString.toString();
+              } else {
+                item.href += '&' + utmParamQueryString.toString();
+              }
+            }
+          });
+        }
+      })();
+    </script>
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"

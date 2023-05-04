@@ -132,6 +132,25 @@
               : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)));
       })(window, document, window._wpemojiSettings);
     </script>
+
+    <script>
+      (function () {
+        const utmParamQueryString = new URLSearchParams(window.location.search);
+        if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function (item) {
+            if (item.href.indexOf('ev.braip.com') !== -1) {
+              if (item.href.indexOf('?') === -1) {
+                item.href += '?' + utmParamQueryString.toString();
+              } else {
+                item.href += '&' + utmParamQueryString.toString();
+              }
+            }
+          });
+        }
+      })();
+    </script>
+
     <style>
       img.wp-smiley,
       img.emoji {

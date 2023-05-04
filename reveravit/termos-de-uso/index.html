@@ -16,6 +16,24 @@
       gtag('config', 'G-JRT82C56Z9');
     </script>
 
+    <script>
+      (function () {
+        const utmParamQueryString = new URLSearchParams(window.location.search);
+        if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function (item) {
+            if (item.href.indexOf('ev.braip.com') !== -1) {
+              if (item.href.indexOf('?') === -1) {
+                item.href += '?' + utmParamQueryString.toString();
+              } else {
+                item.href += '&' + utmParamQueryString.toString();
+              }
+            }
+          });
+        }
+      })();
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="/reveravit/favicon.png" />

@@ -1858,6 +1858,25 @@
       ];
       const ED = { 'header edx': '' };
     </script>
+
+    <script>
+      (function () {
+        const utmParamQueryString = new URLSearchParams(window.location.search);
+        if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function (item) {
+            if (item.href.indexOf('ev.braip.com') !== -1) {
+              if (item.href.indexOf('?') === -1) {
+                item.href += '?' + utmParamQueryString.toString();
+              } else {
+                item.href += '&' + utmParamQueryString.toString();
+              }
+            }
+          });
+        }
+      })();
+    </script>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
